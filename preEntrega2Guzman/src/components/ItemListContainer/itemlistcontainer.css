@@ -1,0 +1,8 @@
+.greeting_box {
+    color: var(--bgdColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 4rem;
+    background: linear-gradient(to bottom, transparent 60%, var(--accentColor) 40%);
+}

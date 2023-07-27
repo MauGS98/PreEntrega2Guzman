@@ -1,0 +1,21 @@
+.counter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    color: var(--whiteColor);
+    margin-top: 1rem;
+}
+
+.counter_button {
+    color: var(--whiteColor);
+    background-color: var(--accentColor);
+}
+
+.add_to_cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--whiteColor);
+    background-color: var(--accentColor);
+}

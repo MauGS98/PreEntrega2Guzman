@@ -1,0 +1,12 @@
+.cart {
+    display: flex;
+    flex-direction: row;
+    gap: .5rem;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+.cart:hover {
+    color: var(--accentColor);
+    transition: .5s;
+}

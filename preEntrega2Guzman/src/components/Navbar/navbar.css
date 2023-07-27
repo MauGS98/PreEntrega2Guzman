@@ -1,0 +1,25 @@
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 7rem;
+    width: 100%;
+    background-color: var(--bgdColor);
+    color: var(--whiteColor);
+}
+
+.nav_logo {
+    height: 5rem;
+    width: auto;
+    color: var(--whiteColor);
+    cursor: pointer;
+}
+
+.used_link {
+    padding: 0 1rem;
+    color: var(--accentColor);
+}
+
+.unused_link {
+    padding: 0 1rem;
+}
