@@ -50,6 +50,10 @@
 }
 
 .item_button {
-    background-color: var(--grayColor);
+    color: var(--whiteColor);
+    background-color: var(--accentColor);
+}
+
+.item_button:hover {
     color: var(--bgdColor);
 }

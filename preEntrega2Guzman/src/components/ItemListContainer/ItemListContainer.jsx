@@ -10,7 +10,7 @@ const ItemListContainer = ({greeting}) => {
     const [inventory, setInventory] = useState([])
 
     const { categoryID } = useParams()
-    
+
     useEffect(() => {
         const asyncFunc = categoryID ? getBikeByCategory : getInventory
 

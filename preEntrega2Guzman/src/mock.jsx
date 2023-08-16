@@ -84,7 +84,7 @@ export const getBikeByID = (detailID) => {
 export const getBikeByCategory = (categoryID) => {
     return new Promise ((resolve) => {
         setTimeout(() => {
-            resolve(inventory.find(bike => bike.category === categoryID))
+            resolve(inventory.filter(bike => bike.category === categoryID))
         }, 300)
     })
 }

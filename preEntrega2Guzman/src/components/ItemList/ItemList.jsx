@@ -2,8 +2,6 @@ import Item from '../Item/Item'
 import './itemlist.css'
 
 const ItemList = ({inventory}) => {
-    console.log(inventory)
-
     return (
         <div className="item_cards_container">
             {inventory.map (bike => {
