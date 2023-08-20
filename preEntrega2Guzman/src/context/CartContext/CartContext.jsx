@@ -17,8 +17,8 @@ export function CartProvider({ children }) {
         }
     }
 
-    const removeItem = (itemID) => {
-        const cartUpdate = cart.filter(prod => prod.id !== itemID);
+    const removeItem = (bikeID) => {
+        const cartUpdate = cart.filter(prod => prod.id !== bikeID);
         setCart(cartUpdate);
     }
 
@@ -30,8 +30,12 @@ export function CartProvider({ children }) {
         return cart.some(prod => prod.id === itemID);
     }
 
+    const total = () => {
+        return cart.map(price * quantity)
+    }
+
     return (
-        <CartContext.Provider value={{cart, addItem, removeItem, clearCart}}>
+        <CartContext.Provider value={{cart, addItem, removeItem, clearCart, total}}>
             {children}
         </CartContext.Provider>
     )
